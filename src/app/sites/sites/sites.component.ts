@@ -112,8 +112,8 @@ export class SitesComponent implements OnInit {
     this.site = {};
   }
 
-  /* 
-   * Shows the add product modal 
+  /*
+   * Shows the add product modal
    */
   showAdd() {
     this.addVisible = true;
@@ -149,7 +149,8 @@ export class SitesComponent implements OnInit {
 
     this._siteService.switch(site.id)
                     .subscribe(
-                      (data: any) => { 
+                      (data: any) => {
+                        console.log('sites.switch() <= '+JSON.stringify(data)); 
                         this.setToken(data.token);
                         this.setSyncability(data.sync.canSync);
                         this.id = data.user.siteId;

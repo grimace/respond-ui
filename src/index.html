@@ -17,7 +17,7 @@
   <!-- fonts -->
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  
+
   <style type="text/css">
     body {
       padding: 49px 0 0 0;
@@ -70,6 +70,11 @@
 </body>
 
 <link rel="stylesheet" href="/api/app/css">
+<script type="text/javascript">
+  var onloadCallback = function() {
+    alert("grecaptcha is ready!");
+  };
+</script>
 <script src='https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit'></script>
 
 </html>

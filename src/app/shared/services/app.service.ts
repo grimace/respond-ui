@@ -23,7 +23,14 @@ export class AppService {
    */
   retrieveSettings () {
 
+    let map:any = {};
+    map.category = 'app';
+    map.action = 'settings';
+
     return this.http.get(this._settingsUrl);
+
+
+
 
   }
 
@@ -50,8 +57,8 @@ export class AppService {
    */
   showToast (type: string, text: string) {
 
-    console.log('show toast, type=' + type + ', text=' + text);
-    
+    console.log('show toast, type=' + type + ', text=' + JSON.stringify(text));
+
     if(type == 'failure'  && (text == null || text == '')) {
       text = 'Sorry, you encountered an error. Contact your site administrator if the problem continues.';
     }
@@ -61,7 +68,7 @@ export class AppService {
     else if(text == null || text == '') {
       text = 'Uncategorized message';
     }
-    
+
     toast.show(type, text)
 
   }

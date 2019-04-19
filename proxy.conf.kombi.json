@@ -1,0 +1,42 @@
+{
+  "/api": {
+    "target": "http://lab2.kombicorp.com:8000",
+    "changeOrigin": true,
+    "secure": false
+  },
+  "/sites": {
+    "target": "http://lab2.kombicorp.com:8000",
+    "changeOrigin": true,
+    "secure": false
+  },
+  "/themes": {
+    "target": "http://lab2.kombicorp.com:8000",
+    "changeOrigin": true,
+    "secure": false
+  },
+  "/edit": {
+    "target": "http://lab2.kombicorp.com:8000",
+    "changeOrigin": true,
+    "secure": false
+  },
+  "/editor": {
+    "target": "http://lab2.kombicorp.com:8000",
+    "changeOrigin": true,
+    "secure": false
+  },
+  "/app/libs": {
+    "target": "http://lab2.kombicorp.com:8000",
+    "changeOrigin": true,
+    "secure": false
+  },
+  "/resources": {
+    "target": "http://lab2.kombicorp.com:8000",
+    "changeOrigin": true,
+    "secure": false
+  },
+  "/dev": {
+    "target": "http://lab2.kombicorp.com:8000",
+    "changeOrigin": true,
+    "secure": false
+  }
+}

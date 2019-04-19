@@ -101,6 +101,7 @@ export class CreateComponent {
     this._appService.retrieveSettings()
                      .subscribe(
                       (data: any) => {
+                         console.log('_appService.retrieveSettings : '+data);
                          this.hasPasscode = data.hasPasscode;
                          this.logoUrl = data.logoUrl;
                          this.acknowledgement = data.acknowledgement;
@@ -170,7 +171,7 @@ export class CreateComponent {
     // set new theme
     this.selectedTheme = this.themes[this.selectedThemeIndex];
     this.url = this._sanitizer.bypassSecurityTrustResourceUrl('themes' + this.selectedTheme.location);
-                      
+
   }
 
   /**
@@ -181,8 +182,8 @@ export class CreateComponent {
     this.selectedThemeIndex = index;
     this.selectedTheme = this.themes[this.selectedThemeIndex];
     this.url = this._sanitizer.bypassSecurityTrustResourceUrl('themes' + this.selectedTheme.location);
-                       
-    
+
+
 
     window.scrollTo(0, 0);
   }
@@ -215,7 +216,7 @@ export class CreateComponent {
   success() {
 
     this._appService.showToast('success', 'Site created successfully!');
-    
+
     this._router.navigate( ['/login', this.site.id] );
 
     // clear model
@@ -254,14 +255,14 @@ export class CreateComponent {
     setTimeout(function() {
       context.setupRecaptcha(el);
     }, 1000);
-  
+
   }
 
   /**
    * Setup the Recaptcha
    */
   setupRecaptcha(el) {
-    
+
     if(this.recaptchaSiteKey != '') {
       grecaptcha.render(el, {
         'sitekey' : this.recaptchaSiteKey,

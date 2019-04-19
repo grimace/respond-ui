@@ -1,41 +1,41 @@
 {
   "/api": {
-    "target": "https://demo.respondcms.com",
+    "target": "http://localhost:3000",
     "changeOrigin": true,
     "secure": true
   },
   "/sites": {
-    "target": "https://demo.respondcms.com",
+    "target": "http://localhost:3000/respond",
     "changeOrigin": true,
     "secure": true
   },
   "/themes": {
-    "target": "https://demo.respondcms.com",
+    "target": "http://localhost:3000/respond",
     "changeOrigin": true,
     "secure": true
   },
   "/edit": {
-    "target": "https://demo.respondcms.com",
+    "target": "http://localhost:3000/respond",
     "changeOrigin": true,
     "secure": true
   },
   "/editor": {
-    "target": "https://demo.respondcms.com",
+    "target": "http://localhost:3000/respond",
     "changeOrigin": true,
     "secure": true
   },
   "/app/libs": {
-    "target": "https://demo.respondcms.com",
+    "target": "http://localhost:3000/respond",
     "changeOrigin": true,
     "secure": true
   },
   "/resources": {
-    "target": "https://demo.respondcms.com",
+    "target": "http://localhost:3000/respond",
     "changeOrigin": true,
     "secure": true
   },
   "/dev": {
-    "target": "https://demo.respondcms.com",
+    "target": "http://localhost:3000/respond",
     "changeOrigin": true,
     "secure": true
   }

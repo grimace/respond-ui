@@ -54,7 +54,7 @@ export class UserService {
 
     // data
     let data = {id, email, password};
-    
+    console.log('login - data : '+JSON.stringify(data));
     return this.http.post(this._loginUrl, data, options);
 
   }

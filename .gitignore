@@ -4,6 +4,7 @@ package-lock.json
 
 /src/app/pro
 /src/app/pro/*
+/dist/**
 
 # compiled output
 /tmp
